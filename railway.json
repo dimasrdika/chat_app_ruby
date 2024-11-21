@@ -3,11 +3,12 @@
   "build": {
     "builder": "NIXPACKS",
     "nixpacks": {
-      "dir": "server"
+      "dir": "backend"
     }
   },
   "deploy": {
     "runtime": "V2",
-    "numReplicas": 1
+    "numReplicas": 1,
+    "startCommand": "bundle exec rails server -b 0.0.0.0 -p 3000"
   }
 }
