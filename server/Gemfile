@@ -8,6 +8,9 @@ gem 'actioncable'
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
+gem 'dotenv-rails', groups: [:development, :test, :production]
+gem 'redis'
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
